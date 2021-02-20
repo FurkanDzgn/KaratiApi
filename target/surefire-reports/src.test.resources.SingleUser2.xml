@@ -1,0 +1,16 @@
+<testsuite failures="1" name="src/test/resources/SingleUser2.feature" skipped="0" tests="1" time="1.311596">
+  <testcase classname="src.test.resources.SingleUser2" name="Validation of Single user" time="1.311596">
+    <failure message="SingleUser2.feature:11 - assert evaluated to false: response.data.first_name == &quot;#string&quot;">Given url "https://reqres.in/api/users/2" ................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* match $ =={"data": {"id": "#number","email": "janet.weaver@reqres.in","first_name": "Janet","last_name": "#ignore","avatar": "https://reqres.in/img/faces/2-image.jpg"},"support": {"url": "https://reqres.in/#support-heading","text": "To keep ReqRes free, contributions towards server costs are appreciated!"}} . passed
+* assert response.data.email == 'janet.weaver@reqres.in' .................. passed
+* assert responseStatus == 200 ............................................ passed
+* assert responseTime &lt; 400 ............................................... passed
+* assert response.data.first_name == "#string" ............................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: SingleUser2.feature:11 - assert evaluated to false: response.data.first_name == "#string"&#13;
+	at ✽.* assert response.data.first_name == "#string" (SingleUser2.feature:11)</failure>
+  </testcase>
+</testsuite>

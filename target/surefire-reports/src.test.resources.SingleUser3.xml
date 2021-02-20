@@ -1,0 +1,12 @@
+<testsuite failures="0" name="src/test/resources/SingleUser3.feature" skipped="0" tests="1" time="1.087481">
+  <testcase classname="src.test.resources.SingleUser3" name="Validation of Single user" time="1.087481">
+    <system-out>Given url "https://reqres.in/api/users/2" ................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* match $ == read ('User.json') ........................................... passed
+* assert response.data.email == 'janet.weaver@reqres.in' .................. passed
+* assert responseStatus == 200 ............................................ passed
+* assert responseTime &lt; 400 ............................................... passed
+* match  response.data.first_name == "#string" ............................ passed</system-out>
+  </testcase>
+</testsuite>
